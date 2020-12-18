@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mohammad Javad\\source\\repos\\AJBC\\AJBC\\AJBC.csproj": {}
+    "C:\\Users\\Mohammad Javad\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mohammad Javad\\source\\repos\\AJBC\\AJBC\\AJBC.csproj": {
+    "C:\\Users\\Mohammad Javad\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mohammad Javad\\source\\repos\\AJBC\\AJBC\\AJBC.csproj",
+        "projectUniqueName": "C:\\Users\\Mohammad Javad\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
         "projectName": "AJBC",
-        "projectPath": "C:\\Users\\Mohammad Javad\\source\\repos\\AJBC\\AJBC\\AJBC.csproj",
+        "projectPath": "C:\\Users\\Mohammad Javad\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
         "packagesPath": "C:\\Users\\Mohammad Javad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mohammad Javad\\source\\repos\\AJBC\\AJBC\\obj\\",
+        "outputPath": "C:\\Users\\Mohammad Javad\\Documents\\GitHub\\AJBC\\AJBC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mohammad Javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
