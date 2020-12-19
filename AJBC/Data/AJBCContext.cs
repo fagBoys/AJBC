@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using AJBC.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 
 namespace AJBC.Data
 {
-    public class AJBCContext : IdentityDbContext
+    public class AJBCContext : DbContext
     {
         public AJBCContext()
         {

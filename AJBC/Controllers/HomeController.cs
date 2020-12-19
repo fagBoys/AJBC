@@ -35,6 +35,13 @@ namespace AJBC.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        [HttpGet]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public async Task<IActionResult> Contact(Contact Contact)
         {
             ViewData["Title"] = "Contact";
