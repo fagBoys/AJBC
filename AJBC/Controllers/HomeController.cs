@@ -54,5 +54,19 @@ namespace AJBC.Controllers
 
             return View();
         }
+
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Revview()
+        {
+            return View();
+        }
+        public IActionResult Services()
+        {
+            return View();
+        }
     }
 }
