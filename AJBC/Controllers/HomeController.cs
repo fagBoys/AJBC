@@ -1,4 +1,5 @@
-﻿using AJBC.Models;
+﻿using AJBC.Data;
+using AJBC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -34,8 +35,16 @@ namespace AJBC.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Contact()
+        public async Task<IActionResult> Contact(Contact Contact)
         {
+            ViewData["Title"] = "Contact";
+
+            AJBCContext context = new AJBCContext();
+
+            context.Contacts.Add(Contact);
+
+            context.SaveChanges();
+
             return View();
         }
     }
