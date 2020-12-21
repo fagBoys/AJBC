@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -72,6 +73,26 @@ namespace AJBC.Controllers
         [HttpPost]
         public async Task<IActionResult> Review(Review review)
         {
+            AJBCContext Context = new AJBCContext();
+            Review reviews = new Review();
+            reviews.Date = DateTime.Now;
+            if (review.Picture == null)
+            {
+                return View();
+                ModelState.AddModelError("", "Please select a file.");
+            }
+            else if (review.Picture.Length != null)
+            {
+                using (var ms = new MemoryStream())
+                {
+                    review.Picture.CopyTo(ms);
+                    var FileByte = ms.ToArray();
+                    reviews.Picture = FileByte;
+                }
+            }
+            Context.Review.Add(reviews);
+            Context.SaveChanges();
+
             return View();
         }
 

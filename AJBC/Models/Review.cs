@@ -18,7 +18,7 @@ namespace AJBC.Models
         public DateTime Date { get; set; }
 
         [NotMapped]
-        public IFormFile Picture { get; set; }
+        public byte[] Picture { get; set; }
 
         public string Message { get; set; }
     }
