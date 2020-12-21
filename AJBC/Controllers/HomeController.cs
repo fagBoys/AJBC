@@ -19,11 +19,13 @@ namespace AJBC.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
+        [HttpGet]
         public IActionResult Privacy()
         {
             return View();
@@ -42,28 +44,38 @@ namespace AJBC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Contact(Contact Contact)
+        public async Task<IActionResult> Contact(Contact contact)
         {
             ViewData["Title"] = "Contact";
 
             AJBCContext context = new AJBCContext();
 
-            context.Contacts.Add(Contact);
+            context.Contact.Add(contact);
 
             context.SaveChanges();
 
             return View();
         }
 
+        [HttpGet]
         public IActionResult About()
         {
             return View();
         }
 
-        public IActionResult Revview()
+        [HttpGet]
+        public IActionResult Review()
         {
             return View();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Review(Review review)
+        {
+            return View();
+        }
+
+        [HttpGet]
         public IActionResult Services()
         {
             return View();
