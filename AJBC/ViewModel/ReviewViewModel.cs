@@ -1,28 +1,24 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Http;
 
-namespace AJBC.Models
+namespace AJBC.ViewModel
 {
-    public class Review
+    public class ReviewViewModel
+
     {
-        [Key]
-        public int ReviewId { get; set; }
-
-
         [Required]
         [MaxLength(20)]
         public string Name { get; set; }
 
-
         public DateTime Date { get; set; }
 
         [NotMapped]
-        public byte[] Picture { get; set; }
+        public IFormFile Picture { get; set; }
 
         [Required]
         [MaxLength(500)]
@@ -31,5 +27,6 @@ namespace AJBC.Models
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+
     }
 }

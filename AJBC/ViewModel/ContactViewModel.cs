@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
-namespace AJBC.Models
+
+
+namespace AJBC.ViewModel
 {
     public class Contact
     {
-        [Key]
-        public int ContactId { get; set; }
 
         [Required]
-        [MaxLength(50)]
+        [MaxLength (50)]
         public string Firstname { get; set; }
 
         [Required]
@@ -30,5 +30,7 @@ namespace AJBC.Models
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+
+
     }
 }

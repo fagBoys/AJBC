@@ -8600,23 +8600,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\suzan\\.nuget\\packages\\": {},
+    "C:\\Users\\a\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
+      "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
       "projectName": "AJBC",
-      "projectPath": "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
-      "packagesPath": "C:\\Users\\suzan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\obj\\",
+      "projectPath": "C:\\Users\\a\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
+      "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\a\\Documents\\GitHub\\AJBC\\AJBC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\suzan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8628,6 +8628,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -8639,6 +8640,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -8679,7 +8681,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
