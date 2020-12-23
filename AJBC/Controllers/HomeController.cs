@@ -1,5 +1,6 @@
 ﻿using AJBC.Data;
 using AJBC.Models;
+using AJBC.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -45,7 +46,7 @@ namespace AJBC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Contact(Contact contact)
+        public async Task<IActionResult> Contact(Contacts contact)
         {
             ViewData["Title"] = "Contact";
 
@@ -71,7 +72,7 @@ namespace AJBC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Review(Review review)
+        public async Task<IActionResult> Review(ReviewViewModel review)
         {
             AJBCContext Context = new AJBCContext();
             Review reviews = new Review();

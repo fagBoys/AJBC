@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AJBC.Models
 {
-    public class Contact
+    public class Contacts
     {
         [Key]
         public int ContactId { get; set; }
