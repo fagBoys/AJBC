@@ -38,10 +38,8 @@ namespace AJBC.Controllers
             {
                 //EF core code
                 AJBCContext Context = new AJBCContext();
-                Contacts contact1 = new Contacts();
                 var Contact = new Contacts { Firstname = Firstname ,Lastname= Lastname, Subject = Subject, Email = Emailaddress, Message = Message };
-                contact1 = Contact;
-                Context.Contact.Add(contact1);
+                Context.Contact.Add(Contact);
                 Context.SaveChanges();
                 //EF core code ends
             }
