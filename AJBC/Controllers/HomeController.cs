@@ -1,6 +1,7 @@
 ﻿using AJBC.Data;
 using AJBC.Models;
 using AJBC.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -24,6 +25,27 @@ namespace AJBC.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(string Firstname ,string Lastname, string Subject, string Emailaddress , string Message)
+        {
+            ViewData["Title"] = "Home Page";
+            if (ModelState.IsValid)
+            {
+                //EF core code
+                AJBCContext Context = new AJBCContext();
+                Contacts contact1 = new Contacts();
+                var Contact = new Contacts { Firstname = Firstname ,Lastname= Lastname, Subject = Subject, Email = Emailaddress, Message = Message };
+                contact1 = Contact;
+                Context.Contact.Add(contact1);
+                Context.SaveChanges();
+                //EF core code ends
+            }
+
             return View();
         }
 
