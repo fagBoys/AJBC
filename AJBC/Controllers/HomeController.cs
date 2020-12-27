@@ -23,9 +23,18 @@ namespace AJBC.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public  IActionResult Index()
         {
-            return View();
+
+            AJBCContext context = new AJBCContext();
+            Review review = new Review();
+
+            //var id = review.Picture.Length;
+            review = context.Review.FirstOrDefault();
+            //var myfile = Convert.ToBase64String(review.Picture);
+            //File(review.Picture, "data:Image/png;base64", date.ToShortDateString() + ".png");
+            
+            return View(review);
         }
 
         [HttpPost]
