@@ -301,3 +301,5 @@ C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\runti
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Review.cshtml.g.cs
+C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Services.cshtml.g.cs

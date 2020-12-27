@@ -38,7 +38,7 @@ namespace AJBC.Controllers
             {
                 //EF core code
                 AJBCContext Context = new AJBCContext();
-                var Contact = new Contacts { Firstname = Firstname ,Lastname= Lastname, Subject = Subject, Email = Emailaddress, Message = Message };
+                var Contact = new Contact { Firstname = Firstname ,Lastname= Lastname, Subject = Subject, Email = Emailaddress, Message = Message };
                 Context.Contact.Add(Contact);
                 Context.SaveChanges();
                 //EF core code ends
@@ -66,7 +66,7 @@ namespace AJBC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Contact(Contacts contact)
+        public async Task<IActionResult> Contact(Contact contact)
         {
             ViewData["Title"] = "Contact";
 

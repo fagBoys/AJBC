@@ -1,18 +1,23 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "";
 }
+
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
     <title>AJ Building Contractors LTD</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/bootstrap/bootstrap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-    @*<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>*@
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/js/main/main.js"></script>
+
+
 </head>
 <body style="position:relative">
 
@@ -44,69 +49,80 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </div><!--Header Start-->
+    <div class="container">
+        <div class="row align-items-center" style=" min-height:100%; height: 100vh; overflow:auto;">
 
-    <!--Header Start-->
-    <section class="SectionOne">
-        <div class="container" style="position:relative; z-index:1; height:100vh; margin:auto;">
 
-            <div class="row" style="margin:0 auto; padding-top:10%;">
-                <div class="col-lg-6" style="padding-top: 10%; margin:0 auto;">
+            <div class="row">
+
+                <div class="col-lg-6" style="text-align: center;">
                     <div class="S1-Left-Column-Style">
                         <h1 class="S1-Title-Style">Strategies of a construction site management</h1>
                         <p class="S1-Text-Style">Here we can provide peace for your house and discover your building issues.</p>
+                        <button type="button" class="btn btn-outline-warning">More about us</button>
                     </div>
                 </div>
-
-                <div class="col-lg-6 S1-Right-Column-Style">
-                    <img src="assets/img/header-vector.png" class="S1-Vector-Style" class="" alt="">
+                <div class="col-lg-6">
+                    <img src="~/img/header-vector.png" class="S1-Vector-Style" alt="">
                 </div>
+
             </div>
 
+
         </div>
-    </section>
+    </div>
     <!--Header End-->
     <!--Services Start-->
     <section class="SectionTwo">
-        <div class="container-fluid">
-            <div class="col-md-12">
-                <h1 class="Header ServicesMainTitle">
-                    Services
-                </h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="Header ServicesMainTitle">
+                        Services
+                    </h1>
+                </div>
             </div>
             <!-- injam -->
             <div class="row" style="padding-top:20px;">
                 <!-- img01 -->
-                <div class="card card-Style" style="">
-                    <img src="assets\img\smiling-adult-sanitary-technician-with-wrench.jpg" class="card-img-top card-img-top-style" alt="...">
-                    <h5 class="card-title card-title-style" style="">Plumbing/Leaking</h5>
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-lg-3">
+                    <div class="card card-Style" style="margin-bottom:10%;">
+                        <img src="~\img\smiling-adult-sanitary-technician-with-wrench.jpg" class="card-img-top" alt="...">
+                        <h5 class="card-title card-title-style" style="">Plumbing/Leaking</h5>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- img02 -->
-                <!-- height:310px; -->
-                <div class="card card-Style" style="width: 14rem; margin: auto; padding:0; ">
-                    <img src="assets\img\Drainge.jpg" class="card-img-top card-img-top-style" alt="..." style="height:149px;">
-                    <h5 class="card-title card-title-style">Drainge</h5>
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-lg-3">
+                    <div class="card card-Style" style="">
+                        <img src="~\img\smiling-adult-sanitary-technician-with-wrench.jpg" class="card-img-top" alt="...">
+                        <h5 class="card-title card-title-style" style="">Plumbing/Leaking</h5>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- img03 -->
-                <div class="card card-Style" style="width: 14rem; margin: auto; padding:0;">
-                    <img src="assets\img\roof-insulating-by-mineral-wool.jpg" class="card-img-top card-img-top-style" alt="...">
-                    <h5 class="card-title card-title-style">Heating/Gas</h5>
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-lg-3">
+                    <div class="card card-Style" style="">
+                        <img src="~\img\smiling-adult-sanitary-technician-with-wrench.jpg" class="card-img-top" alt="...">
+                        <h5 class="card-title card-title-style" style="">Plumbing/Leaking</h5>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- img04 -->
-                <div class="card card-Style" style="width: 14rem; margin: auto; padding:0;">
-                    <img src="assets/img/crop-woman-making-blueprints.jpg" class="card-img-top card-img-top-style" alt="...">
-                    <h5 class="card-title card-title-style">Architect</h5>
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="col-lg-3">
+                    <div class="card card-Style" style="">
+                        <img src="~\img\smiling-adult-sanitary-technician-with-wrench.jpg" class="card-img-top" alt="...">
+                        <h5 class="card-title card-title-style" style="">Plumbing/Leaking</h5>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -116,7 +132,7 @@
                 <div class="col-md-3 ServicesSections">
 
                   <div>
-                    <img  src="assets\img\smiling-adult-sanitary-technician-with-wrench.jpg" style="width:100px;height:200px;">
+                    <img  src="~\img\smiling-adult-sanitary-technician-with-wrench.jpg" style="width:100px;height:200px;">
                   </div>
 
                   <div>
@@ -162,73 +178,60 @@
     <section class="SectionFour" style="">
 
         <!-- Contact us -->
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-6 contact-image-style">
-                    <!-- <img src="assets\img\contact-image.jpg" style="position:relative;height: 100px; width:100px; margin:0;padding:0;float:left; border:0;"> -->
-                </div>
-
-
-                <div class="col-md-6" style="background-color:#FEFEFE">
-                    <h1 style="text-align:center; color:#B59972; padding-top:20px;">  Contact us </h1>
-                    <form>
-                        <div class=" ">
-
-
-                            <div class="col-md-5 ContactUsFormStyle" style="float:left;">
-                                <label class="sr-only" for="inlineFormInput">Name</label>
-                                <input name="Firstname" type="text" class="form-control mb-2 ContactUsInputStyle" id="inlineFormInput" placeholder="Firstname">
-                            </div>
-                            <div class="col-md-5 ContactUsFormStyle" style="float:right;">
-                                <label class="sr-only" for="inlineFormInput">LastName</label>
-                                <input name="Lastname" type="text" class="form-control mb-2 ContactUsInputStyle" id="inlineFormInput" placeholder="Lastname">
 
 
 
-                            </div>
+        <section class="section-style">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
 
+                        <div class="contact-content-style">
+                            <h1 class="heading-style">Contact</h1>
+                            <p class="contact-paragraph-style">This is a sample text. It's about contact form and when users can fill it.</p>
+                            <form class="contact-form-style" action="index.html" method="post">
+                                <div class="row">
 
-
-
-                            <div class="col-md-5 ContactUsFormStyle" style="float:right;">
-                                <label class="sr-only" for="inlineFormInput">Subject</label>
-                                <input name="Subject" type="text" class="form-control mb-2 ContactUsInputStyle" id="inlineFormInput" placeholder="Subject">
-                            </div>
-
-                            <div class="col-md-5 ContactUsFormStyle " style="float:left;">
-                                <label class="sr-only" for="inlineFormInputGroup">Email address</label>
-                                <div class="input-group mb-2 ContactUsInputStyle">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"></div>
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Firstname" class="contact-input-style" name="" value="">
                                     </div>
-                                    <input name="Emailaddress" type="text" class="form-control ContactUsInputStyle" id="inlineFormInputGroup" placeholder="Email address">
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Lastname" class="contact-input-style" name="" value="">
+                                    </div>
+
                                 </div>
+                                <div class="row">
 
-                            </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Email address" class="contact-input-style" name="" value="">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Subject" class="contact-input-style" name="" value="">
+                                    </div>
 
+                                </div>
+                                <div class="row">
 
+                                    <div class="col-lg-12">
+                                        <textarea type="text" placeholder="Email address" class="contact-textarea-style" name="" value=""></textarea>
+                                    </div>
 
-
-
-
-                            <div class="col-md-12" style="float:left;">
-                                <textarea name="Message" type="text" class="form-control ContactUsInputStyle" placeholder="Message" style="width: 100%;height: 200px;"> </textarea>
-
-                            </div>
-
-                            <div class="" style="text-align:center!important;float:center;padding-top:10%;">
-                                <button type="submit" asp-controller="Home" asp-action="Index" asp-route-Firstname="Firstname" asp-route-Lastname="Lastname" asp-route-Subject="Subject" asp-route-Emailaddress="Emailaddress" asp-route-Message="Message" class="ContactUsBtn" style="">Send</button>
-                            </div>
-
-
-
-
-
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12" style="text-align: center;">
+                                        <button type="button" class="contact-button-style" name="button">Send</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+
+                    </div>
+                    <div class="col-lg-6 contact-image-style">
+
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
     </section>
     <!-- SectionFourEND -->
@@ -242,7 +245,7 @@
 
                     <div class="" style="margin: auto; padding-top:8%;">
                         <div class="S5-Image-Box-Style">
-                            <img src="assets/img/reviewpic.jpg" style="margin: 15%;" alt="">
+                            <img src="~/img/reviewpic.jpg" style="margin: 15%;" alt="">
                         </div>
                         <div class="S5-Rectangle-Style">
                             <p class="S5-Text-Style">On a personal note, I’d just like to say that myself and everyone here at AAR ipressed with the way AJ Building Contractors Ltd act as a freight company.</p>
@@ -257,57 +260,57 @@
         </div>
     </section>
 
-    <section class="SectionSix">
-        <!--Footer-->
+    <!-- Footer -->
+    <section class="section-style-footer">
         <div class="container-fluid">
 
-            <div class="row" style="padding: 5%;">
-                <div class="col-lg-4">
-
-                    <ul style="list-style-type: none;" class="S6-Left-List-Style">
-                        <h1 class="S6-Title-Style">About us</h1>
-                        <li><h3>AJ Contractors Building</h3></li>
-                        <li><p>Here we can provide peace for your house and discover your building issues.</p></li>
-                    </ul>
-
+            <div class="row footer-row-style">
+                <div class="col-lg-4 footer-box-style">
+                    <div class="footer-title-style">
+                        <h3 class="footer-title-style">Site map</h3>
+                    </div>
+                    <div class="footer-content-sitemap-style">
+                        <p><a href="#" style="color:#468fb3">News for our Website - sssasdqw</a></p>
+                        <p><a href="#" style="color:#468fb3">Read about our services</a></p>
+                        <p><a href="#" style="color:#468fb3">Our work samples</a></p>
+                        <p><a href="#" style="color:#468fb3">About page</a></p>
+                        <p><a href="#" style="color:#468fb3">Contact page</a></p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 footer-box-style">
+                    <div class="footer-title-style">
+                        <h3 class="footer-title-style">About us</h3>
+                    </div>
+                    <div class="footer-content-about-style">
+                        <h4>AJ Building Contractors</h4>
+                        <p>Here we can provide peace for your house and discover your building issues.</p>
 
-                    <ul style="list-style-type: none;" class="S6-Left-List-Style">
-                        <h1 class="S6-Title-Style">Links</h1>
-                        <li><p>Our experts are ready to deliver the solutions you need 365/24/07. Call or email us now.</p></li>
-                        <li><p>Birmingham, UK</p></li>
-                        <li><p>+44 - 2536548954</p></li>
-                        <li><p>Youremail@mailserver.com</p></li>
-                    </ul>
-
+                    </div>
                 </div>
-                <div class="col-lg-4">
-
-                    <ul style="list-style-type: none;" class="S6-Left-List-Style">
-                        <h1 class="S6-Title-Style">Contact us</h1>
-                        <li><p>Our experts are ready to deliver the solutions you need 365/24/07. Call or email us now.</p></li>
-                        <div class="S6-Right-Inside-List-Style">
-                            <li>
-                                <img class="S6-Right-Icons-Style" src="" alt="">
-                                <p>Birmingham, UK</p>
-                            </li>
-                            <li>
-                                <img class="S6-Right-Icons-Style" src="" alt="">
-                                <p>+44 - 2536548954</p>
-                            </li>
-                            <li>
-                                <img class="S6-Right-Icons-Style" src="" alt="">
-                                <p>Youremail@mailserver.com</p>
-                            </li>
-                        </div>
-                    </ul>
-
+                <div class="col-lg-4 footer-box-style">
+                    <div class="footer-title-style"><h3 class="footer-title-style">Contact us</h3></div>
+                    <div class="footer-content-contacts-style">
+                        <p>Our experts are ready to deliver the solutions you need 365/24/7. Call or email us now.</p>
+                        <p>Location: Birmingham,UK</p>
+                        <p>Phone: + 9 8 - 2 5 - 3 7 7 3 2 8 3 2</p>
+                        <P>Email: N a m e  M a i l . c o m</P>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <!--End of Footer -->
+    <div class="last-content container-fluid">
+        <div class="row">
+            <div class="col-lg-12 last-box">
+                <h5 class="last-logo-bold-style">Logotype</h5>
+                <p class="last-logo-light-style"> copyrights © 2021 All right reserved | Website made by Vira</p>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
