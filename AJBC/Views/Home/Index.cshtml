@@ -1,4 +1,5 @@
-﻿@{
+﻿@model AJBC.Models.Review
+@{
     ViewData["Title"] = "Home Page";
     Layout = "";
 }
@@ -193,33 +194,33 @@
                                 <div class="row">
 
                                     <div class="col-lg-6">
-                                        <input type="text" placeholder="Firstname" class="contact-input-style" name="" value="">
+                                        <input type="text" placeholder="Firstname" class="contact-input-style" name="Firstname" value="">
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="text" placeholder="Lastname" class="contact-input-style" name="" value="">
+                                        <input type="text" placeholder="Lastname" class="contact-input-style" name="Lastname" value="">
                                     </div>
 
                                 </div>
                                 <div class="row">
 
                                     <div class="col-lg-6">
-                                        <input type="text" placeholder="Email address" class="contact-input-style" name="" value="">
+                                        <input type="text" placeholder="Email address" class="contact-input-style" name="Emailaddress" value="">
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="text" placeholder="Subject" class="contact-input-style" name="" value="">
+                                        <input type="text" placeholder="Subject" class="contact-input-style" name="Subject" value="">
                                     </div>
 
                                 </div>
                                 <div class="row">
 
                                     <div class="col-lg-12">
-                                        <textarea type="text" placeholder="Email address" class="contact-textarea-style" name="" value=""></textarea>
+                                        <textarea type="text" placeholder="Message" class="contact-textarea-style" name="Message" value=""></textarea>
                                     </div>
 
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12" style="text-align: center;">
-                                        <button type="button" class="contact-button-style" name="button">Send</button>
+                                        <button type="submit" asp-controller="Home" asp-action="Index" asp-route-Firstname="Firstname" asp-route-Lastname="Lastname" asp-route-Emailaddress="Emailaddress" asp-route-Subject="Subject" asp-route-Message="Message" class="contact-button-style" name="button">Send</button>
                                     </div>
                                 </div>
                             </form>
@@ -248,8 +249,10 @@
                             <img src="~/img/reviewpic.jpg" style="margin: 15%;" alt="">
                         </div>
                         <div class="S5-Rectangle-Style">
+                                @*@Model.Message*@
+
                             <p class="S5-Text-Style">On a personal note, I’d just like to say that myself and everyone here at AAR ipressed with the way AJ Building Contractors Ltd act as a freight company.</p>
-                            <h2>Lisa</h2>
+                            <h2>@*@Model.Name*@Lisa</h2>
                         </div>
                     </div>
 
