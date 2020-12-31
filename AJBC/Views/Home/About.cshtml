@@ -2,5 +2,32 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    Layout = "_Layout.cshtml";
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "About";
 }
+
+<div class="container Layout-Body-Style">
+    <div class="row">
+        <div class="col-md-12">
+
+            <!-- <h1 class="HeadH1">About Us</h1> -->
+
+            <h3 class="Title-Style" style="">AJ Building Contractors : </h3>
+            <p class="Text-Style">
+                Here we can provide peace for your house and discover your building issues.
+                <br>
+                We are a construction company who work on different issues such as plumbing, drainge and heating of your house. Our team serves building construction for different house spaces. We are glad to help your different requests.
+            </p>
+            <h3 class="Title-Style">Our services include :</h3>
+            <ol class="Text-Style">
+                <li>Plumbing/Leaking</li>
+                <li>Drainge</li>
+                <li>Heating/Gas</li>
+                <li>Contruction</li>
+            </ol>
+            <p style="padding-top:40px;">For more Information <a asp-action="Contact">contact us</a> and we will response soon.</p>
+
+
+        </div>
+    </div>
+</div>

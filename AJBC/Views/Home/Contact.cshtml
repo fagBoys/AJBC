@@ -4,7 +4,7 @@
     ViewData["Title"] = "Contact";
 }
 
-<h1>Contact</h1>
+@*<h1>Contact</h1>
 
 <h4>Contact</h4>
 <hr />
@@ -50,4 +50,72 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+}*@
+
+<div class="container Layout-Body-Style">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="Title-Style" style="">Contact us for any issue</h3>
+            <p class="Text-Style">For any construction project, plumping or house drainage contact us through this form. You can also send email or call us. Our experts are ready to solve the solutions you need 365/24/7. Call or email us now.</p>
+            <br>
+            <img class="footer-content-contacts-icons" src="~/img/icon/Location.svg" width="24" alt="">
+            <p>Birmingham,UK</p>
+            <img class="footer-content-contacts-icons" src="~/img/icon/Phone.svg" width="24" alt="">
+            <p>+ 9 8 - 2 5 - 3 7 7 3 2 8 3 2</p>
+            <img class="footer-content-contacts-icons" src="~/img/icon/Email.svg" width="24" alt="">
+            <P>Name@Mail.com</P>
+        </div>
+    </div>
+    <form asp-controller="Home" asp-action="Contact" class="contact-form-style" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <input type="text" asp-for="Firstname" placeholder="Firstname" class="contact-input-style">
+                <span asp-validation-for="Firstname" class="text-danger"></span>
+            </div>
+            <div class="col-lg-6">
+
+                <input type="text" asp-for="Lastname" placeholder="Lastname" class="contact-input-style">
+                <span asp-validation-for="Lastname" class="text-danger"></span>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <input type="text" asp-for="Email" placeholder="Email address" class="contact-input-style">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="col-lg-6">
+
+                <input type="text" asp-for="Subject" placeholder="Subject" class="contact-input-style">
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <textarea type="text" asp-for="Message" placeholder="Message" class="contact-textarea-style"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12" style="text-align: center;">
+                <button type="submit" class="btn-primarys btns" name="button">Send</button>
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+
+</div>

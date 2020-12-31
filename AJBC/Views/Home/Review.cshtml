@@ -4,45 +4,84 @@
     ViewData["Title"] = "Review";
 }
 
-<h1>Review</h1>
 
-<h4>Review</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Review">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+<div class="container Layout-Body-Style">
+
+
+
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h3 class="Title-Style" style="">We are here to listen</h3>
+            <p class="Text-Style">Tell us your opinion about our team performance, this will help to find out how we can serve to our customers. We will notice all reviews and display some reviews in our website.</p>
+        </div>
+
+    </div>
+
+    <form asp-controller="Home" asp-action="Review" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+
+            <div class="col-lg-6">
+                <input type="text" asp-for="Name" placeholder="Full name" class="contact-input-style" name="" value="">
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Date" class="control-label"></label>
-                <input asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger"></span>
+
+            <!-- <div class="col-lg-6">
+          <input type="file" class="form-control" style="height: 50px!important; margin-top: 3vh;" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        </div> -->
+            <div class="col-lg-6" style="position:relative;">
+                <label for="FileUpload" class="contact-input-style" style="display:block;position:absolute;width:95%;">Drop your file here</label>
+                <input type="file" asp-for="Picture" class="contact-input-style" name="" value="" style="
+
+                      z-index: -1;
+                      float:left;
+                      width: 100%;
+                      height: 50px;
+                      padding: 10px;
+                      margin-top: 3vh;
+                      border-width: 1px;
+                      border-radius: 3px;
+                      border-style: solid;
+                      border-color: #dddddd;
+                      opacity: 0;
+
+                  ">
             </div>
-            <div class="form-group">
-                <label asp-for="Picture" class="control-label"></label>
-                <input asp-for="Picture" class="form-control" />
-                <span asp-validation-for="Picture" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Message" class="control-label"></label>
-                <input asp-for="Message" class="form-control" />
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <textarea type="text" asp-for="Message" placeholder="Message" class="contact-input-style" name="" value="" style="height: 200px;"></textarea>
                 <span asp-validation-for="Message" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12" style="text-align: center;">
+                <button type="submit" class="btn-primarys btns" name="button">Send</button>
             </div>
-        </form>
-    </div>
-</div>
+        </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    </form>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    <!-- <div class="PlaceForForm">
+
+            <form action="">
+
+              <input type="text" id="" name="firstname" placeholder="Full name">
+              <textarea name="name" rows="" cols=""></textarea>
+              <input type="file" value="Submit">
+              <input type="submit" value="Submit">
+
+          </form>
+
+    </div> -->
+
+</div>
+</div>

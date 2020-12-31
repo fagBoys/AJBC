@@ -2,5 +2,66 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    Layout = "_Layout.cshtml";
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Services";
 }
+
+<script>
+
+    $(document).ready(function(){
+
+        $("#ServicesImg1").fadeIn(300);
+        $("#ServicesImg1").animate({left: '0px'});
+        $("#ServicesImg2").fadeIn(300);
+        $("#ServicesImg2").animate({right: '0px'});
+        $("#ServicesImg3").fadeIn(300);
+        $("#ServicesImg3").animate({left: '0px'});
+        $("#ServicesImg4").fadeIn(300);
+        $("#ServicesImg4").animate({right: '0px'});
+    });
+
+</script>
+
+<div class="container Layout-Body-Style">
+
+    <div class="row">
+        <div class="col-lg-4 img-services-left" id="ServicesImg1">
+            <img src="~/img/services/Construction.png" style="width:100%;" alt="">
+        </div>
+        <div class="col-lg-8" style="padding:50px;">
+            <h3 class="Title-Style">Construction</h3>
+            <p class="Text-Style">Having signed the contract You can be sure, that project expenses will not change despite market fluctuations. To ensure this we can provide contract, payment or proposal guarantees signed by bank or insurance companies.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8" style="padding:50px;">
+            <h3 class="Title-Style">Plumbing / Leaking</h3>
+            <p class="Text-Style">Our main goal is to ensure our customers are provided with no stress emergency plumbing services.we are able to attend to all your emergency plumbing needs, whether it be day or night; and as fast as possible. We are always here to help.</p>
+        </div>
+        <div class="col-lg-4 img-services-right" id="ServicesImg2">
+            <img src="~/img/services/Drainge.png" style="width:100%;" alt="">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 img-services-left" id="ServicesImg3">
+            <img src="~/img/services/heating.png" style="width:100%;" alt="">
+        </div>
+        <div class="col-lg-8" style="padding:50px;">
+            <h3 class="Title-Style">Heating / Gas</h3>
+            <p class="Text-Style">ventilation and air conditioning systems are responsible for heating and cooling your home and includes products like furnaces, air conditioners, heat pumps as well as ductwork, thermostats and other home comfort controls. AJ Building Contractors will handle your house heating</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8" style="padding:50px;">
+            <h3 class="Title-Style">Drainge</h3>
+            <p class="Text-Style">Drainage is the artificial removal of water, both surface and sub-surface. Drainage is often a major element of civil engineering and construction projects and is necessary to avoid flooding and other damage. We can halp to drainge your building or office.</p>
+        </div>
+        <div class="col-lg-4 img-services-right" id="ServicesImg4">
+            <img src="~/img/services/Plumbing.png" style="width:100%;" alt="">
+        </div>
+    </div>
+
+</div>
