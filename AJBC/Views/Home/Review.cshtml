@@ -29,11 +29,12 @@
             </div>
 
             <!-- <div class="col-lg-6">
-          <input type="file" class="form-control" style="height: 50px!important; margin-top: 3vh;" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-        </div> -->
+              <input type="file" class="form-control" style="height: 50px!important; margin-top: 3vh;" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            </div> -->
             <div class="col-lg-6" style="position:relative;">
-                <label for="FileUpload" class="contact-input-style" style="display:block;position:absolute;width:95%;">Drop your file here</label>
-                <input type="file" asp-for="Picture" class="contact-input-style" style="
+                <label for="FileUpload" class="contact-input-style label" style="display:block;position:absolute;width:95%;">Drop your file here</label>
+                <input type="file" asp-for="Picture" class="contact-input-style" accept=".JPG , .PNG" name="picture" style="
+
 
                       z-index: -1;
                       float:left;
@@ -82,6 +83,12 @@
           </form>
 
     </div> -->
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".contact-input-style").on("change", function () {
+            var picture = $(this).val().split("\\").pop();
+            $(this).siblings(".label").addClass("selected").html(picture);
+        });
+    </script>
 
-</div>
 </div>
