@@ -743,13 +743,16 @@ transform: scale(1);
 
 
 /* Review page style Start */
-.PlaceForForm
+
+.review-title
 {
+    font-weight:bold !important;
+}
 
-background-color: red;
-height:80vh;
-margin: 5% 15%;
-
+.PlaceForForm {
+    background-color: red;
+    height: 80vh;
+    margin: 5% 15%;
 }
 
 

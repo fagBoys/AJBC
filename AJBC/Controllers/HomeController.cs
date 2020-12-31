@@ -31,9 +31,11 @@ namespace AJBC.Controllers
 
             //var id = review.Picture.Length;
             //review = context.Review.FirstOrDefault();
-            //var myfile = Convert.ToBase64String(review.Picture);
-            //File(review.Picture, "data:Image/png;base64", date.ToShortDateString() + ".png");
-            
+            review = context.Review.OrderBy(r => Guid.NewGuid()).Take(1).First();
+            /*            var myfile = Convert.ToBase64String(review.Picture)*/
+            ;
+            //File(review.Picture, "data:Image/png;base64","picture.png");
+
             return View(review);
         }
 

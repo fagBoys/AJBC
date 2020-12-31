@@ -39,13 +39,15 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">AJ Contractors Building</a>
-                <button style="" class="navbar-toggler" type="button" name="button" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:50px;">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left:50px;">
+
+
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" style="color:#b59972; font-weight: bold;" aria-current="page" asp-action="Indx">Home</a>
+                            <a class="nav-link active" style="color:#b59972; font-weight: bold;" aria-current="page" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-action="About">About</a>
@@ -151,31 +153,31 @@
             </div>
 
             <!-- <div class="row">
-        <div class="col-md-3 ServicesSections">
+                <div class="col-md-3 ServicesSections">
 
-          <div>
-            <img  src="~\img\smiling-adult-sanitary-technician-with-wrench.jpg" style="width:100px;height:200px;">
-          </div>
+                  <div>
+                    <img  src="~\img\smiling-adult-sanitary-technician-with-wrench.jpg" style="width:100px;height:200px;">
+                  </div>
 
-          <div>
+                  <div>
 
-            <h4>
-              Plumbing/Leaking
-            </h4>
+                    <h4>
+                      Plumbing/Leaking
+                    </h4>
 
-            <p>
-              Last but not least, let me show you how you could easily transform your code into comment lines. With the following shortcut, you can turn your code into a comment, or your comment into a line of code.
-            </p>
-          </div>
-
-
-        </div>
+                    <p>
+                      Last but not least, let me show you how you could easily transform your code into comment lines. With the following shortcut, you can turn your code into a comment, or your comment into a line of code.
+                    </p>
+                  </div>
 
 
-        <div class="col-md-3">images</div>
-        <div class="col-md-3">images</div>
-        <div class="col-md-3">images</div>
-    </div> -->
+                </div>
+
+
+                <div class="col-md-3">images</div>
+                <div class="col-md-3">images</div>
+                <div class="col-md-3">images</div>
+            </div> -->
 
         </div>
 
@@ -271,15 +273,18 @@
                 <div class="card mb-0 card-Style">
                     <div class="row g-0 align-items-center">
                         <div class="col-md-3" style="">
-
-                            <img src="~/img/reviewpic.jpg" class="" style="margin: auto; border: 10px solid #625321;" alt="...">
+                            @{ 
+                                var base64 = Convert.ToBase64String(Model.Picture);
+                                var RevPic = string.Format("data:image/jpg;base64,{0}",base64);
+                            }
+                            <img src="@RevPic" width="180px" height="180px" class="" style="margin: auto; border: 10px solid #625321;" alt="@Model.Name">
 
 
                         </div>
                         <div class="col-md-9" style="padding-left:10%; padding-right:20%;">
                             <div class="card-body">
-                                <h3 class="card-title">Lisa</h3>
-                                <p class="card-text">On a personal note, I’d just like to say that myself and everyone here at AAR ipressed with the way AJ Building Contractors Ltd act as a freight company.</p>
+                                <h4 class="card-title review-title">@Model.Name</h4>
+                                <p class="card-text">@Model.Message</p>
                                 <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
                         </div>
@@ -287,17 +292,17 @@
                 </div>
 
                 <!--
-      <div class="col-lg-2">
+                <div class="col-lg-2">
 
-          <img src="~/img/reviewpic.jpg" alt="">
+                    <img src="~/img/reviewpic.jpg" alt="">
 
-      </div>
-      <div class="col-lg-10">
-        <div class="S5-Rectangle-Style">
-          <p class="S5-Text-Style">On a personal note, I’d just like to say that myself and everyone here at AAR ipressed with the way AJ Building Contractors Ltd act as a freight company.</p>
-          <h2>Lisa</h2>
-        </div>
-      </div> -->
+                </div>
+                <div class="col-lg-10">
+                  <div class="S5-Rectangle-Style">
+                    <p class="S5-Text-Style">On a personal note, I’d just like to say that myself and everyone here at AAR ipressed with the way AJ Building Contractors Ltd act as a freight company.</p>
+                    <h2>Lisa</h2>
+                  </div>
+                </div> -->
 
 
 
