@@ -126,8 +126,10 @@ namespace AJBC.Controllers
         public async Task<IActionResult> Review(ReviewViewModel review)
         {
             AJBCContext Context = new AJBCContext();
-            Review reviews = new Review();
-            reviews.Date = DateTime.Now;
+            Review NewReview = new Review();
+            NewReview.Date = DateTime.Now;
+            NewReview.Name = review.Name;
+            NewReview.Message = review.Message;
             if (review.Picture == null)
             {
                 return View();
@@ -139,10 +141,10 @@ namespace AJBC.Controllers
                 {
                     review.Picture.CopyTo(ms);
                     var FileByte = ms.ToArray();
-                    reviews.Picture = FileByte;
+                    NewReview.Picture = FileByte;
                 }
             }
-            Context.Review.Add(reviews);
+            Context.Review.Add(NewReview);
             Context.SaveChanges();
 
             return View();

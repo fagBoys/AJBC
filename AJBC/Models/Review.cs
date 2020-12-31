@@ -18,18 +18,16 @@ namespace AJBC.Models
         [MaxLength(20)]
         public string Name { get; set; }
 
-
         public DateTime Date { get; set; }
 
-        [NotMapped]
         public byte[] Picture { get; set; }
 
         [Required]
         [MaxLength(500)]
         public string Message { get; set; }
 
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
+        //[Required]
+        //[EmailAddress]
+        //public string Email { get; set; }
     }
 }

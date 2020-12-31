@@ -19,12 +19,12 @@
 
     </div>
 
-    <form asp-controller="Home" asp-action="Review" method="post">
+    <form asp-controller="Home" asp-action="Review" method="post" enctype="multipart/form-data">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="row">
 
             <div class="col-lg-6">
-                <input type="text" asp-for="Name" placeholder="Full name" class="contact-input-style" name="" value="">
+                <input type="text" asp-for="Name" placeholder="Full name" class="contact-input-style">
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
 
@@ -33,7 +33,7 @@
         </div> -->
             <div class="col-lg-6" style="position:relative;">
                 <label for="FileUpload" class="contact-input-style" style="display:block;position:absolute;width:95%;">Drop your file here</label>
-                <input type="file" asp-for="Picture" class="contact-input-style" name="" value="" style="
+                <input type="file" asp-for="Picture" class="contact-input-style" style="
 
                       z-index: -1;
                       float:left;
@@ -56,7 +56,7 @@
         <div class="row">
 
             <div class="col-lg-12">
-                <textarea type="text" asp-for="Message" placeholder="Message" class="contact-input-style" name="" value="" style="height: 200px;"></textarea>
+                <textarea type="text" asp-for="Message" placeholder="Message" class="contact-input-style" style="height: 200px;"></textarea>
                 <span asp-validation-for="Message" class="text-danger"></span>
             </div>
 

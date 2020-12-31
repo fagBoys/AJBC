@@ -17,16 +17,11 @@ namespace AJBC.ViewModel
 
         public DateTime Date { get; set; }
 
-        [NotMapped]
         public IFormFile Picture { get; set; }
 
         [Required]
         [MaxLength(500)]
         public string Message { get; set; }
-
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
 
     }
 }
