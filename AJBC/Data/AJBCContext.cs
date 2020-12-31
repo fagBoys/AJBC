@@ -24,7 +24,7 @@ namespace AJBC.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=sql11.hostinguk.net; Database=AJBC_database; User Id=AJBCbuser; Password=AJBC.db;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer("Server=sql11.hostinguk.net; Database=ajbuildi_database; User Id=ajbuildi_dbuser; Password=DBpass123;MultipleActiveResultSets=true");
             //Server =.; Database = CrestDB; Trusted_Connection = True; MultipleActiveResultSets = true
             //Server=sql11.hostinguk.net; Database=crestcou_database; User Id=crestdbuser; Password=CRESTcouriers.db;MultipleActiveResultSets=true
         }

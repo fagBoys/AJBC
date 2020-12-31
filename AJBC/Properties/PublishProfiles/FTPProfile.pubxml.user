@@ -11,25 +11,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="AJBC.deps.json">
-      <publishTime>12/31/2020 03:13:09</publishTime>
+      <publishTime>12/31/2020 16:57:45</publishTime>
     </File>
     <File Include="AJBC.dll">
-      <publishTime>12/31/2020 03:13:03</publishTime>
+      <publishTime>12/31/2020 16:57:34</publishTime>
     </File>
     <File Include="AJBC.exe">
-      <publishTime>12/31/2020 03:13:04</publishTime>
+      <publishTime>12/31/2020 16:57:34</publishTime>
     </File>
     <File Include="AJBC.pdb">
-      <publishTime>12/31/2020 03:13:03</publishTime>
+      <publishTime>12/31/2020 16:57:34</publishTime>
     </File>
     <File Include="AJBC.runtimeconfig.json">
       <publishTime>12/31/2020 02:40:48</publishTime>
     </File>
     <File Include="AJBC.Views.dll">
-      <publishTime>12/31/2020 03:13:05</publishTime>
+      <publishTime>12/31/2020 16:57:37</publishTime>
     </File>
     <File Include="AJBC.Views.pdb">
-      <publishTime>12/31/2020 03:13:05</publishTime>
+      <publishTime>12/31/2020 16:57:37</publishTime>
     </File>
     <File Include="appsettings.Development.json">
       <publishTime>12/19/2020 00:03:55</publishTime>
@@ -350,7 +350,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/12/2019 17:08:36</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>12/31/2020 03:13:16</publishTime>
+      <publishTime>12/31/2020 16:57:51</publishTime>
     </File>
     <File Include="wwwroot/css/bootstrap/bootstrap-grid.css">
       <publishTime>12/07/2020 19:20:12</publishTime>
@@ -452,7 +452,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/19/2020 00:03:56</publishTime>
     </File>
     <File Include="wwwroot/css/style.css">
-      <publishTime>12/31/2020 01:07:16</publishTime>
+      <publishTime>12/31/2020 16:51:03</publishTime>
     </File>
     <File Include="wwwroot/favicon.ico">
       <publishTime>12/19/2020 00:03:56</publishTime>
@@ -658,11 +658,5 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll">
       <publishTime>09/12/2019 17:08:36</publishTime>
     </File>
-  </ItemGroup>
-  <ItemGroup>
-    <EFMigrations Include="AJBC.Data.AJBCContext">
-      <Value>
-      </Value>
-    </EFMigrations>
   </ItemGroup>
 </Project>

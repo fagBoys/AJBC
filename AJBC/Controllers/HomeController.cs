@@ -75,17 +75,39 @@ namespace AJBC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Contact(Contact contact)
+        public async Task<IActionResult> Contact(Contact? contact, string? Firstname, string? Lastname, string? Emailaddress, string? Subject, string? Message)
         {
             ViewData["Title"] = "Contact";
 
-            AJBCContext context = new AJBCContext();
 
-            context.Contact.Add(contact);
+                AJBCContext context = new AJBCContext();
+                if (Firstname != null & Lastname != null & Emailaddress != null & Subject != null & Message != null)
+                {
+                    if(!ModelState.IsValid)
+                    {
+                         return new RedirectResult("/Home/Index");
+                    }
+                    else
+                    {
+                        context.Contact.Add(new Contact { Firstname = Firstname, Lastname = Lastname, Email = Emailaddress, Subject = Subject, Message = Message });
+                        context.SaveChanges();
+                        return new RedirectResult("/Home/Index");
+                    }
 
-            context.SaveChanges();
-
-            return View();
+                }
+                else
+                {
+                    if (!ModelState.IsValid)
+                    {
+                        return View(!ModelState.IsValid ? contact : new Contact());
+                    }
+                    else
+                    { 
+                        context.Contact.Add(contact);
+                        context.SaveChanges();
+                        return View();
+                    }
+                }
         }
 
         [HttpGet]

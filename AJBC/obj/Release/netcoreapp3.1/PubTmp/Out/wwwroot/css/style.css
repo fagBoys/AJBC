@@ -549,22 +549,27 @@ section.section-style-footer
 
 .footer-content-sitemap-style
 {
-  text-align: justify;
   padding-top: 50px;
+  text-align: left;
   font-weight:600;
   font-size:2.5vh;
   width: 80%;
   margin: 0 auto;
 }
-
-.footer-content-about-style
+.footer-content-sitemap-option 
 {
-  padding-top: 50px;
-  text-align: justify;
-  width: 80%;
-  margin: 0 auto;
-  font-size:2.5vh;
-  color: black;
+  color: #625321 !important;
+  text-decoration:none;
+  line-height:1;
+}
+
+.footer-content-about-style {
+    padding-top: 50px;
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.5vh;
+    color: black;
 }
 
 .footer-content-contacts-style
