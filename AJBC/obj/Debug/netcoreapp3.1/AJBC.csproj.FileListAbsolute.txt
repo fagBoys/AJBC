@@ -81,7 +81,6 @@ C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\ru\Mi
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\AJBC.csprojAssemblyReference.cache
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\AJBC.AssemblyInfoInputs.cache
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\AJBC.AssemblyInfo.cs
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\AJBC.csproj.CoreCompileInputs.cache

@@ -20,7 +20,7 @@
     <div class="NavbarStyle">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">AJ Contractors Building</a>
+                <a class="navbar-brand" href="https://ajbuildingcontractors.co.uk">AJ Contractors Building</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -49,7 +49,6 @@
         </nav>
     </div>
     <!-- Navbar End-->
-
     <!--Header Start-->
     <div class="container-fluid Layout-Header-Image">
 
@@ -90,6 +89,7 @@
             @RenderBody()
         </main>
     </div>
+
     <!-- Footer -->
     <section class="section-style-footer">
         <div class="container-fluid">
@@ -100,11 +100,11 @@
                         <h3 class="footer-title-style">Site map</h3>
                     </div>
                     <div class="footer-content-sitemap-style">
-                        <p><a href="#" style="color:#468fb3">News for our Website - sssasdqw</a></p>
-                        <p><a href="#" style="color:#468fb3">Read about our services</a></p>
-                        <p><a href="#" style="color:#468fb3">Our work samples</a></p>
-                        <p><a href="#" style="color:#468fb3">About page</a></p>
-                        <p><a href="#" style="color:#468fb3">Contact page</a></p>
+                        <p><a asp-action="About" class="footer-content-sitemap-option">Read more about us and our company</a></p>
+                        <p><a asp-action="Services" class="footer-content-sitemap-option">Explore our services and features</a></p>
+                        <p><a asp-action="Contact" class="footer-content-sitemap-option">Contact us</a></p>
+                        <p><a asp-action="Review" class="footer-content-sitemap-option">Testimonials</a></p>
+                        <p><a href="http://fagboys.ir/" target="_blank" class="footer-content-sitemap-option">Browse builders website</a></p>
                     </div>
                 </div>
                 <div class="col-lg-4 footer-box-style">
@@ -126,11 +126,11 @@
                     <div class="footer-content-contacts-style">
                         <p>Our experts are ready to deliver the solutions you need 365/24/7. Call or email us now.</p>
                         <img class="footer-content-contacts-icons" src="~/img/icon/Location.svg" width="24" alt="">
-                        <p>Birmingham,UK</p>
+                        <p>Birmingham, UK</p>
                         <img class="footer-content-contacts-icons" src="~/img/icon/Phone.svg" width="24" alt="">
-                        <p>+ 9 8 - 2 5 - 3 7 7 3 2 8 3 2</p>
+                        <p>+44-121-7901280</p>
                         <img class="footer-content-contacts-icons" src="~/img/icon/Email.svg" width="24" alt="">
-                        <P>Name@Mail.com</P>
+                        <P>Info@ajbuildingcontractors.co.uk</P>
                     </div>
                 </div>
             </div>
@@ -142,8 +142,8 @@
     <div class="last-content container-fluid">
         <div class="row">
             <div class="col-lg-12 last-box">
-                <h5 class="last-logo-bold-style">Logotype</h5>
-                <p class="last-logo-light-style"> copyrights © 2021 All right reserved | Website made by Vira</p>
+                <h5 class="last-logo-bold-style">AJ Building Contractors</h5>
+                <p class="last-logo-light-style"> copyrights © 2021 All right reserved | Website made by <a style="text-decoration:none; color:#ad974f;" href="http://fagboys.ir/" target="_blank">Vira</a></p>
             </div>
         </div>
     </div>
