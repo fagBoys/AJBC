@@ -552,7 +552,6 @@ section.section-style-footer
   padding-top: 50px;
   text-align: left;
   font-weight:600;
-  font-size:2.5vh;
   width: 80%;
   margin: 0 auto;
 }
@@ -560,7 +559,8 @@ section.section-style-footer
 {
   color: #625321 !important;
   text-decoration:none;
-  line-height:1;
+  font-size:16px;
+  margin: 0 auto;
 }
 
 .footer-content-about-style {
@@ -594,26 +594,27 @@ section.section-style-footer
 
 h3.footer-title-style
 {
-
-font-weight: bold;
-text-align: left;
-color: #ad974f;
-margin-left: 20%;
+    font-weight: bold;
+    text-align: left;
+    color: #ad974f;
+    margin-left: 20%;
 }
 
-.last-content
+.footer-text-style
 {
+    font-size:16px;
+}
 
-text-align: center;
-box-shadow: 10px 10px 10px 3.5px;
-
+.last-content {
+    text-align: center;
+    box-shadow: 10px 10px 10px 3.5px;
 }
 
 .last-box
 {
 
-padding-top: 15px;
-padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
 }
 
@@ -673,11 +674,10 @@ padding-bottom: 15px;
 
 .SectionA
 {
-background-color: white;
-margin: auto;
-height: auto;
-margin: 0 auto;
-
+    background-color: white;
+    margin: auto;
+    height: auto;
+    margin: 0 auto;
 }
 .HeadH1
 {
