@@ -638,12 +638,14 @@ h3.footer-title-style
 /* Section six */
 
 /* Layout start */
-.Layout-Header-Image
-{
-  background-image: url("../img/LayoutHeader.jpg");
-  background-size: cover;
-  background-position: center;
-  height:40vh;
+.Layout-Header-Image {
+    /*background-image: url("../img/LayoutHeader.jpg");*/
+    /*background-image: url("../img/Services.jpg");*/
+    /*background-image: url("../img/contact-Us-02.jpg");*/
+    background-image: url("../img/AboutUs.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
 }
 
 .Layout-Header-Text
