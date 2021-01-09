@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Program Files (x86)\\GitHubFile\\AJBC\\AJBC\\AJBC.csproj": {}
+    "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj": {}
   },
   "projects": {
-    "D:\\Program Files (x86)\\GitHubFile\\AJBC\\AJBC\\AJBC.csproj": {
+    "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Program Files (x86)\\GitHubFile\\AJBC\\AJBC\\AJBC.csproj",
+        "projectUniqueName": "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
         "projectName": "AJBC",
-        "projectPath": "D:\\Program Files (x86)\\GitHubFile\\AJBC\\AJBC\\AJBC.csproj",
-        "packagesPath": "C:\\Users\\zack424\\.nuget\\packages\\",
-        "outputPath": "D:\\Program Files (x86)\\GitHubFile\\AJBC\\AJBC\\obj\\",
+        "projectPath": "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
+        "packagesPath": "C:\\Users\\suzan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\zack424\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\suzan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -43,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.10.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -82,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

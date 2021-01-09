@@ -458,3 +458,6 @@ D:\Program Files (x86)\GitHubFile\AJBC\AJBC\obj\Debug\netcoreapp3.1\staticwebass
 D:\Program Files (x86)\GitHubFile\AJBC\AJBC\obj\Debug\netcoreapp3.1\AJBC.dll
 D:\Program Files (x86)\GitHubFile\AJBC\AJBC\obj\Debug\netcoreapp3.1\AJBC.pdb
 D:\Program Files (x86)\GitHubFile\AJBC\AJBC\obj\Debug\netcoreapp3.1\AJBC.genruntimeconfig.cache
+C:\Users\suzan\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\suzan\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Review.cshtml.g.cs
+C:\Users\suzan\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Services.cshtml.g.cs
