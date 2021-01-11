@@ -43,6 +43,8 @@ namespace AJBC.Controllers
             ;
             //File(review.Picture, "data:Image/png;base64","picture.png");
 
+            @ViewData["IndexMenuActive"] = "active";
+
             return View(review);
         }
 
@@ -177,6 +179,7 @@ namespace AJBC.Controllers
         [HttpGet]
         public IActionResult Contact()
         {
+            @ViewData["ContactMenuActive"] = "active";
             return View();
         }
 
@@ -320,12 +323,14 @@ namespace AJBC.Controllers
         [HttpGet]
         public IActionResult About()
         {
+            @ViewData["AboutMenuActive"] = "active";
             return View();
         }
 
         [HttpGet]
         public IActionResult Review()
         {
+            @ViewData["ReviewMenuActive"] = "active";
             return View();
         }
 
@@ -360,6 +365,7 @@ namespace AJBC.Controllers
         [HttpGet]
         public IActionResult Services()
         {
+            @ViewData["ServicesMenuActive"] = "active";
             return View();
         }
     }

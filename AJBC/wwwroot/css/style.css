@@ -159,6 +159,12 @@ body
   width: 100%;
 }
 
+.active
+{
+  color:#ad974f;
+  font-weight: bold;
+}
+
 .S1-Right-Column-Style
 {
   text-align: center;
@@ -267,7 +273,7 @@ body
   background-image: url('../img/empty-living-room-with-blue-sofa-plants-and-table-on-empty-white-wall-background-3d-rendering.jpg');
 }
 
-  .img-responsive
+.img-responsive
 {
     display: block;
     max-width: 100%;
@@ -555,7 +561,7 @@ section.section-style-footer
   width: 80%;
   margin: 0 auto;
 }
-.footer-content-sitemap-option 
+.footer-content-sitemap-option
 {
   color: #625321 !important;
   text-decoration:none;
