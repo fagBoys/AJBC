@@ -175,7 +175,7 @@ namespace AJBC.Controllers
         }
 
         [HttpGet]
-        public IActionResult Contact1()
+        public IActionResult Contact()
         {
             return View();
         }

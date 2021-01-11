@@ -461,3 +461,6 @@ D:\Program Files (x86)\GitHubFile\AJBC\AJBC\obj\Debug\netcoreapp3.1\AJBC.genrunt
 C:\Users\suzan\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\suzan\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Review.cshtml.g.cs
 C:\Users\suzan\Documents\GitHub\AJBC\AJBC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Services.cshtml.g.cs
+C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll

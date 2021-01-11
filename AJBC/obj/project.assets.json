@@ -8805,27 +8805,24 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.1",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
+      "MimeKit >= 2.10.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\suzan\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Mohammad Javad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
+      "projectUniqueName": "C:\\Users\\Mohammad Javad\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
       "projectName": "AJBC",
-      "projectPath": "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
-      "packagesPath": "C:\\Users\\suzan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suzan\\Documents\\GitHub\\AJBC\\AJBC\\obj\\",
+      "projectPath": "C:\\Users\\Mohammad Javad\\Documents\\GitHub\\AJBC\\AJBC\\AJBC.csproj",
+      "packagesPath": "C:\\Users\\Mohammad Javad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mohammad Javad\\Documents\\GitHub\\AJBC\\AJBC\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\suzan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mohammad Javad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8837,6 +8834,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -8848,6 +8846,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MailKit": {
             "target": "Package",
@@ -8872,6 +8871,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.4, )"
+          },
+          "MimeKit": {
+            "target": "Package",
+            "version": "[2.10.1, )"
           }
         },
         "imports": [
@@ -8892,7 +8895,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

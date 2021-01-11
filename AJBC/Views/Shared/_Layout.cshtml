@@ -50,17 +50,24 @@
     </div>
     <!-- Navbar End-->
     <!--Header Start-->
-    <div class="container-fluid Layout-Header-Image">
+    @{string headerpath = "'../img/header/" + @ViewData["Title"] + ".jpg'"; }
+<div class="container-fluid Layout-Header-Image" style="background-image: url(@headerpath);">
 
-        <div class="row align-items-center">
+    <div class="row align-items-center">
+        @*/*background-image: url("../img/LayoutHeader.jpg");*/
+            /*background-image: url("../img/Services.jpg");*/
+            /*background-image: url("../img/contact-Us-02.jpg");*/
+            background-image: url("../img/AboutUs.jpg");*@
+        @*background-image: url(@headerpath)*@
 
-            <div class="col-lg-1" style="margin:auto; width:auto;">
-                <h1 class="Layout-Header-Text">@ViewData["Title"]</h1>
-            </div>
 
+        <div class="col-lg-1" style="margin:auto; width:auto;">
+            <h1 class="Layout-Header-Text">@ViewData["Title"]</h1>
         </div>
 
     </div>
+
+</div>
     <!--Header End-->
     @*<header>
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
