@@ -38,12 +38,12 @@ namespace AJBC.Controllers
 
             //var id = review.Picture.Length;
             //review = context.Review.FirstOrDefault();
-            review = context.Review.OrderBy(r => Guid.NewGuid()).Take(1).First();
+            review = context.Review.OrderBy(r => Guid.NewGuid()).Take(1).Single();
             /*            var myfile = Convert.ToBase64String(review.Picture)*/
             ;
             //File(review.Picture, "data:Image/png;base64","picture.png");
 
-            @ViewData["IndexMenuActive"] = "active";
+            @ViewData["IndexMenuActive"] = "active activemenu";
 
             return View(review);
         }
@@ -179,7 +179,7 @@ namespace AJBC.Controllers
         [HttpGet]
         public IActionResult Contact()
         {
-            @ViewData["ContactMenuActive"] = "active";
+            @ViewData["ContactMenuActive"] = "active activemenu";
             return View();
         }
 
@@ -323,14 +323,14 @@ namespace AJBC.Controllers
         [HttpGet]
         public IActionResult About()
         {
-            @ViewData["AboutMenuActive"] = "active";
+            @ViewData["AboutMenuActive"] = "active activemenu";
             return View();
         }
 
         [HttpGet]
         public IActionResult Review()
         {
-            @ViewData["ReviewMenuActive"] = "active";
+            @ViewData["ReviewMenuActive"] = "active activemenu";
             return View();
         }
 
@@ -365,7 +365,13 @@ namespace AJBC.Controllers
         [HttpGet]
         public IActionResult Services()
         {
-            @ViewData["ServicesMenuActive"] = "active";
+            @ViewData["ServicesMenuActive"] = "active activemenu";
+            return View();
+        }
+
+        public IActionResult Gallery()
+        {
+            @ViewData["GalleryMenuActive"] = "active activemenu";
             return View();
         }
     }

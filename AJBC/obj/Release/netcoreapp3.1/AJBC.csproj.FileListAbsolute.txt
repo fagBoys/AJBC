@@ -153,3 +153,6 @@ C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\AJB
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\AJBC.dll
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\AJBC.pdb
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\AJBC.genruntimeconfig.cache
+C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Release\netcoreapp3.1\MailKit.dll
+C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Release\netcoreapp3.1\MimeKit.dll
+C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\bin\Release\netcoreapp3.1\BouncyCastle.Crypto.dll
