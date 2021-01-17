@@ -6,7 +6,8 @@
 body
 {
   font-family: CenturyGothic !important;
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .social-style
@@ -40,11 +41,10 @@ body
    height: 100vh;
    overflow: auto;
 }
-.SectionTwo
-{
-  /* background-color: #ad974f; */
-  background-color: #dacda4;
-  height: 100%;
+.SectionTwo {
+    /* background-color: #ad974f; */
+    background-color: #ad974f;
+    height: auto;
 }
 .SectionThree
 {
@@ -205,20 +205,6 @@ body
 
 /* Section Two Style Start : */
 
-.ServicesMainTitle
-{
-
-  color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: : 50px;
-  font-weight: bold;
-
-}
-
 .ServicesSections
 {
 
@@ -231,7 +217,9 @@ body
 .ServicesImg
 {
   width:100%;
+  text-align: left;
 }
+
 .card-Style
 {
 
@@ -256,6 +244,7 @@ body
 {
     padding-top: 5px;
     padding-left: 12px;
+    font-weight:900;
     color: #ad974f;
 }
 
@@ -271,6 +260,7 @@ body
 .SectionThreeStyle
 {
   background-image: url('../img/empty-living-room-with-blue-sofa-plants-and-table-on-empty-white-wall-background-3d-rendering.jpg');
+  background-size:cover;
 }
 
 .img-responsive
@@ -726,10 +716,10 @@ padding: 0.375rem 2.75rem !important;
 
 .card-img-top:hover
 {
-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
-.card:hover
+.card-zoom:hover
 {
 transition: transform 1s !important;
 /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) !important; */
@@ -737,7 +727,7 @@ transform: scale(1.1);
 filter: grayscale(0%);
 }
 
-.card:not(:hover)
+.card-zoom:not(:hover)
 {
 transition: transform 1s !important;
 /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) !important; */
@@ -865,27 +855,115 @@ transform: scale(1);
     margin: 5px;
 }
 
-    .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
     }
 
-        .button span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
+/* Slider Start */
+/*.panel {
+    border: none;
+    border-color: pink;
+    height: 200px;
+    margin: 10px;
+    font-size: 72px;
+    text-align: center;
+    list-style: circle;
+}
 
-    .button:hover span {
-        padding-right: 25px;
+.slick-dots {
+    font-size: 40px !important;
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 10;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    color: red !important;
+    font-family: 'slick';
+}
+
+.slick-dots li.slick-active button:before {
+    font-size: 50px;
+    color: red !important;
+    font-family: 'slick';
+}
+
+
+.slick-dots li button::before {
+    font-size: 50px !important;
+    color: black !important;
+    opacity: 0.7;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #786225 !important;
+    opacity: 1;
+}*/
+
+/**/
+
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+    .slick-slide img {
+        width: 100%;
     }
 
-        .button:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.single-item
+{
+    margin-top:50px;
+}
+
+/* slider End */

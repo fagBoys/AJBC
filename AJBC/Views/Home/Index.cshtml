@@ -13,10 +13,22 @@
     <link rel="stylesheet" href="~/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="~/css/bootstrap/bootstrap.min.css">
 
+    <link rel="stylesheet" type="text/css" href="~/css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/css/slick/slick-theme.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="~/js/main/main.js"></script>
+
+    <script src="~/js/slick.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="~/js/slick.min.js"></script>
+    <script type="text/javascript" src="~/js/slick.js"></script>
+
 
     <script>
         $(document).ready(function () {
@@ -105,85 +117,161 @@
     <!--Header End-->
     <!--Services Start-->
     <section class="SectionTwo">
-        <div class="container">
+
+
+        
+
+        <div class="container" style="padding-bottom:5vh;">
+
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="Header ServicesMainTitle">
-                        Services
-                    </h1>
+                    <h1 class="heading-style" style="color:white;">Services</h1>
                 </div>
             </div>
-            <!-- injam -->
-            <div class="row" style="padding-top:20px;">
-                <!-- img01 -->
-                <div class="col-lg-3">
-                    <div class="card card-Style shadow-sm" style="">
-                        <img id="image" src="~/img/index-plumbing.jpg" class="card-img-top" alt="...">
-                        <h5 class="card-title card-title-style" style="">Plumbing/Leaking</h5>
-                        <div class="card-body">
-                            <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- img02 -->
-                <div class="col-lg-3">
-                    <div class="card card-Style shadow-sm" style="">
-                        <img id="image" src="~/img/index-drainge.jpg" class="card-img-top" alt="...">
-                        <h5 class="card-title card-title-style" style="">Drainge</h5>
-                        <div class="card-body">
-                            <p class="card-text">Drainage is often a major element of construction projects and is necessary to avoid flooding.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- img03 -->
-                <div class="col-lg-3">
-                    <div class="card card-Style shadow-sm" style="">
-                        <img id="image" src="~/img/index-heating.jpg" class="card-img-top" alt="...">
-                        <h5 class="card-title card-title-style" style="">Heating/Gas</h5>
-                        <div class="card-body">
-                            <p class="card-text">ventilation and air conditioning systems are responsible for heating and cooling your home.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- img04 -->
-                <div class="col-lg-3">
-                    <div class="card card-Style shadow-sm" style="">
-                        <img id="image" src="~/img/index-construction.jpg" class="card-img-top" alt="...">
-                        <h5 class="card-title card-title-style" style="">Construction</h5>
-                        <div class="card-body">
-                            <p class="card-text">Having signed the contract You can be sure, that project expenses will not change.</p>
-                        </div>
-                    </div>
-                </div>
 
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="single-item">
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Construction</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Plumbing/Leaking</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Drainge</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Heating/Gas</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Boiler servicing</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Boiler replacements</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Central heating installation</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Underfloor heating</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Heating controlls</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Installation, refurbs & new builds</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Unvented Hot Water Cylinders</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Bathrooms</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-Style shadow-sm" style="">
+                            <img id="image" src="~/img/index-plumbing.jpg" alt="...">
+                            <h6 class="card-title card-title-style" style="">Water pressure improvements</h6>
+                            <div class="card-body">
+                                <p class="card-text">Our main goal is to ensure our customers are provided with emergency plumbing services.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
-            <!-- <div class="row">
-                <div class="col-md-3 ServicesSections">
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.single-item').slick({
 
-                  <div>
-                    <img  src="~\img\smiling-adult-sanitary-technician-with-wrench.jpg" style="width:100px;height:200px;">
-                  </div>
+                        centerMode: true,
+                        centerPadding: '60px',
+                        slidesToShow: 3,
+                        responsive: [
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '40px',
+                                    slidesToShow: 3
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '40px',
+                                    slidesToShow: 1
+                                }
+                            }
+                        ]
 
-                  <div>
-
-                    <h4>
-                      Plumbing/Leaking
-                    </h4>
-
-                    <p>
-                      Last but not least, let me show you how you could easily transform your code into comment lines. With the following shortcut, you can turn your code into a comment, or your comment into a line of code.
-                    </p>
-                  </div>
-
-
-                </div>
-
-
-                <div class="col-md-3">images</div>
-                <div class="col-md-3">images</div>
-                <div class="col-md-3">images</div>
-            </div> -->
+                    });
+                });
+            </script>
 
         </div>
 
@@ -192,7 +280,7 @@
 
     <section class="SectionThree">
         <!--Why us?-->
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding-bottom:5vh !important;">
             <div class="col-md-6">
                 <ul class="S3-Text-Column-Style">
                     <h1 class="S3-Text-Title-Style">Why us?</h1>
