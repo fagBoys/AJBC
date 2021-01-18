@@ -2,29 +2,29 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Gallery";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div style="padding-top:50px; padding-bottom:50px;">
 
     <div class="row">
-        <div class="col-lg-3" id="gal1" style="padding:0;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div class="col-lg-3" id="gal1" style="padding:0;" onclick="setImage('01');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs01.jpg" style="height:18rem; object-fit: cover;" />
             </div>
         </div>
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('02');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs02.jpg" style="height:18rem; object-fit: cover;" />
             </div>
         </div>
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('03');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs03.jpg" style="height:18rem; object-fit: cover;" />
             </div>
         </div>
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('04');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs04.jpg" style="height:18rem; object-fit: cover;" />
             </div>
@@ -32,22 +32,22 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('05');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs05.jpg" style="height:18rem; object-fit: cover;" />
             </div>
         </div>
         <div class="col-lg-3" style="padding:0;">
-            <div class="card" style="width:18rem; margin: 20px;">
+            <div class="card" style="width:18rem; margin: 20px;" onclick="setImage('06');" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="~/img/gallerysmall/gs06.jpg" style="height:18rem; object-fit: cover;" />
             </div>
         </div>
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('07');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs07.jpg" style="height:18rem; object-fit: cover;" />
             </div>
         </div>
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('08');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs08.jpg" style="height:18rem; object-fit: cover;" />
             </div>
@@ -55,22 +55,22 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('09');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs09.jpg" style="height:18rem; object-fit: cover;" />
             </div>
         </div>
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('10');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs10.jpg" style="height:18rem; object-fit: cover;" />
             </div>
         </div>
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('11');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs11.jpg" style="height:18rem; object-fit: cover;" />
             </div>
         </div>
-        <div class="col-lg-3" style="padding:0;">
+        <div class="col-lg-3" style="padding:0;" onclick="setImage('12');" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="card" style="width:18rem; margin: 20px;">
                 <img src="~/img/gallerysmall/gs12.jpg" style="height:18rem; object-fit: cover;" />
             </div>
@@ -90,7 +90,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="~/img/gallerylarge/gl01.jpg" class="img-responsive" style="margin:auto;"/>
+                <img src="" id="LargeImage" class="img-responsive" style="margin:auto;"/>
             </div>
             @*<div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -107,4 +107,10 @@
     myModal.addEventListener('shown.bs.modal', function () {
         myInput.focus()
     })
+</script>
+
+<script type="text/javascript">
+    function setImage(id) {
+        document.getElementById('LargeImage').src = "../img/gallerylarge/gl" + id + ".jpg";
+    }
 </script>
