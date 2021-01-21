@@ -50,9 +50,10 @@ body
 {
   background-color: white;
   height: 60vh;
-  background-image: url('../img/empty-living-room-with-blue-sofa-plants-and-table-on-empty-white-wall-background-3d-rendering.jpg');
+  background-image: url('../img/Whyus.jpg');
   background-position: bottom;
   background-size: cover;
+
 }
 
 .heading-style
@@ -950,11 +951,11 @@ transform: scale(1);
 
 .slick-slide {
     transition: all ease-in-out .3s;
-    opacity: .2;
+    opacity: 1SectionThree;
 }
 
 .slick-active {
-    opacity: .5;
+    opacity: 1;
 }
 
 .slick-current {
