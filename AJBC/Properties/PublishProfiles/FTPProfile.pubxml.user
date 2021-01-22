@@ -11,25 +11,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="AJBC.deps.json">
-      <publishTime>01/20/2021 14:26:35</publishTime>
+      <publishTime>01/22/2021 20:43:32</publishTime>
     </File>
     <File Include="AJBC.dll">
-      <publishTime>01/20/2021 14:26:30</publishTime>
+      <publishTime>01/22/2021 20:43:28</publishTime>
     </File>
     <File Include="AJBC.exe">
-      <publishTime>01/20/2021 14:26:30</publishTime>
+      <publishTime>01/22/2021 20:43:28</publishTime>
     </File>
     <File Include="AJBC.pdb">
-      <publishTime>01/20/2021 14:26:30</publishTime>
+      <publishTime>01/22/2021 20:43:28</publishTime>
     </File>
     <File Include="AJBC.runtimeconfig.json">
       <publishTime>01/12/2021 04:08:57</publishTime>
     </File>
     <File Include="AJBC.Views.dll">
-      <publishTime>01/20/2021 14:26:32</publishTime>
+      <publishTime>01/22/2021 20:43:31</publishTime>
     </File>
     <File Include="AJBC.Views.pdb">
-      <publishTime>01/20/2021 14:26:32</publishTime>
+      <publishTime>01/22/2021 20:43:31</publishTime>
     </File>
     <File Include="appsettings.Development.json">
       <publishTime>01/12/2021 00:37:13</publishTime>
@@ -359,7 +359,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/12/2019 17:08:36</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>01/20/2021 14:26:44</publishTime>
+      <publishTime>01/22/2021 20:43:34</publishTime>
     </File>
     <File Include="wwwroot/css/bootstrap/bootstrap-grid.css">
       <publishTime>01/12/2021 00:37:25</publishTime>
@@ -735,6 +735,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="wwwroot/img/Logo.jpg">
       <publishTime>01/12/2021 00:37:26</publishTime>
+    </File>
+    <File Include="wwwroot/img/Logo.png">
+      <publishTime>01/22/2021 18:00:58</publishTime>
     </File>
     <File Include="wwwroot/img/reviewpic.jpg">
       <publishTime>01/12/2021 00:37:26</publishTime>

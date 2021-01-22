@@ -122,7 +122,7 @@ C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\Pub
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\img\index-plumbing.jpg
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\img\index-underfloor.jpg
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\img\index-waterpressure.jpg
-C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\img\Logo.jpg
+C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\img\Logo.png
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\img\reviewpic.jpg
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\img\services\bathroom.png
 C:\Users\Mohammad Javad\Documents\GitHub\AJBC\AJBC\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\img\services\boiler-replacements.png
