@@ -66,10 +66,10 @@ namespace AJBC.Controllers
                 ///////    Send Email   mail:ajbbuilding49@gmail.com pass:Awedxzs09Am  ///////
                 MimeMessage message = new MimeMessage();
 
-                MailboxAddress from = new MailboxAddress("AJ Building ", "send email to ...");
+                MailboxAddress from = new MailboxAddress("AJ Building ", "theajcontractors@outlook.com");
                 message.From.Add(from);
 
-                MailboxAddress to = new MailboxAddress("AJ Building", "send email to ...");
+                MailboxAddress to = new MailboxAddress("AJ Building", "theajcontractors@outlook.com");
                 message.To.Add(to);
 
                 message.Subject = " Contact";
@@ -116,7 +116,7 @@ namespace AJBC.Controllers
 
                 MimeMessage message2 = new MimeMessage();
 
-                MailboxAddress from2 = new MailboxAddress("AJ Building", "send email to ...");
+                MailboxAddress from2 = new MailboxAddress("AJ Building", "theajcontractors@outlook.com");
                 message2.From.Add(from2);
 
                 MailboxAddress to2 = new MailboxAddress(Contact.Firstname + Contact.Lastname + " " + Contact.Subject, Contact.Email);
@@ -205,10 +205,10 @@ namespace AJBC.Controllers
                     ///////    Send Email   mail:ajbbuilding49@gmail.com pass:Awedxzs09Am  ///////
                     MimeMessage message = new MimeMessage();
 
-                    MailboxAddress from = new MailboxAddress("AJ Building ", "send email to ...");
+                    MailboxAddress from = new MailboxAddress("AJ Building ", "theajcontractors@outlook.com");
                     message.From.Add(from);
 
-                    MailboxAddress to = new MailboxAddress("AJ Building", "send email to ...");
+                    MailboxAddress to = new MailboxAddress("AJ Building", "theajcontractors@outlook.com");
                     message.To.Add(to);
 
                     message.Subject = " Contact";
@@ -255,7 +255,7 @@ namespace AJBC.Controllers
 
                     MimeMessage message2 = new MimeMessage();
 
-                    MailboxAddress from2 = new MailboxAddress("AJ Building", "send email to ...");
+                    MailboxAddress from2 = new MailboxAddress("AJ Building", "theajcontractors@outlook.com");
                     message2.From.Add(from2);
 
                     MailboxAddress to2 = new MailboxAddress(Contact1.Firstname + Contact1.Lastname + " " + Contact1.Subject, Contact1.Email);
